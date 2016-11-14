@@ -2,7 +2,8 @@
 A LÖVE implementation of Dial-A-Pirate from the EGA version of The Secret of Monkey Island
 
 ## Setup
-Run the following to download the assets (two images)
+Run the following to download the assets (two images):
+
     cd assets
     ./download-assets.sh
 
