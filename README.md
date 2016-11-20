@@ -1,5 +1,6 @@
 # dial-a-pirate
-A LÖVE implementation of Dial-A-Pirate from the EGA version of The Secret of Monkey Island
+A [LÖVE](https://love2d.org/) implementation of the Dial-A-Pirate
+copy-protection wheel from the EGA version of The Secret of Monkey Island
 
 ## Setup
 Run the following to download the assets (two images):
