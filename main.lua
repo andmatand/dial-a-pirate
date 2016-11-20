@@ -43,6 +43,12 @@ function love.mousepressed(x, y, button)
     end
 end
 
+function love.mousereleased(x, y, button)
+    if button == 1 then
+        drag = nil
+    end
+end
+
 function getAngle(clickX, clickY)
     local x = clickX - back.position.x
     local y = clickY - back.position.y
