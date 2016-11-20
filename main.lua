@@ -34,11 +34,27 @@ function love.resize()
     adjust_scale()
 end
 
-function love.mousemoved()
-    back.r = math.atan2(
-        love.mouse.getX() - back.position.x,
-        back.position.y - love.mouse.getY()) -
-        (math.pi / 2)
+function love.mousepressed(x, y, button)
+    if button == 1 then
+        drag = {
+            initialAngle = getAngle(x, y),
+            initialDiscRotation = back.r
+        }
+    end
+end
+
+function getAngle(clickX, clickY)
+    local x = clickX - back.position.x
+    local y = clickY - back.position.y
+
+    return math.atan2(y, x)
+end
+
+function love.mousemoved(x, y)
+    if love.mouse.isDown(1) and drag then
+        local currentAngle = getAngle(x, y)
+        back.r = drag.initialDiscRotation + currentAngle - drag.initialAngle
+    end
 end
 
 function love.draw()
