@@ -1,5 +1,5 @@
 function love.conf(t)
-    t.version = '0.10.2'
+    t.version = '11.3'
     t.window.resizable = true
 
     t.modules.audio = false
