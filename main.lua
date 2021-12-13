@@ -8,7 +8,7 @@ function love.load()
     front = {
         image = love.graphics.newImage('assets/front.png'),
         position = {x = 0, y = 0},
-        offset = {x = 378, y = 370},
+        offset = {x = 300, y = 300},
         r = 0
     }
 
