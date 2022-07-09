@@ -2,13 +2,13 @@ function love.load()
     back = {
         image = love.graphics.newImage('assets/back.png'),
         position = {x = 0, y = 0},
-        offset = {x = 523, y = 517},
+        offset = {x = 480, y = 480},
         r = 0
     }
     front = {
         image = love.graphics.newImage('assets/front.png'),
         position = {x = 0, y = 0},
-        offset = {x = 378, y = 370},
+        offset = {x = 480, y = 480},
         r = 0
     }
 
